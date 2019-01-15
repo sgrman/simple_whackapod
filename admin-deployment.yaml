@@ -3,8 +3,6 @@ kind: Deployment
 metadata:
   name: admin-deployment
 spec:
-  ServiceAccountName: wap-admin
-spec:
   selector:
     matchLabels:
       app: admin
@@ -15,6 +13,7 @@ spec:
         app: admin
     spec:
       containers:
+      serviceAccountName: wap-admin
       - name: admin
         image: cloudowski/whackapod-admin
         ports:
