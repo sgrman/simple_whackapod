@@ -21,7 +21,8 @@ spec:
         env:
         - name: APIIMAGE
           value: cloudowski/whackapod-api
-      
+        - name: GAMENAMESPACE
+          value: default
 ---
 apiVersion: v1
 kind: Service
