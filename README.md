@@ -48,7 +48,7 @@ This yaml will create a service account 'wap-admin' and bind it to a cluster adm
 kubectl apply -f service-account-cluster-role.yaml
 ```
 
-### Step Three: Deploy Whack-a-Pod Application Tiers
+### Step 1.4: Deploy Whack-a-Pod Application Tiers
 This will deploy 12 replicas for the "api" tier, 4 replicas for the "game" tier and 1 pod for the "admin" teir. In addition, each yaml will define and expose a service for each deployment.  As mentioned above, the "admin-deployment" tier will also apply the previously created 'wap-admin' service tier and specify the 'wap-game' namespace for the deployment of the simulated kubernetes pods that will be the target of the game.
 
 ```
@@ -57,7 +57,7 @@ kubectl apply -f game-deployment.yaml
 kubectl apply -f admin-deployment.yaml
 ```
 
-### Step Four: Deploy an Ingress
+### Step 1.5: Deploy an Ingress
 This yaml will deploy and ingress for the application.  You may need to change the host value in line 23 for your environment.
 
 ```
