@@ -12,8 +12,8 @@ spec:
       labels:
         app: admin
     spec:
-      containers:
       serviceAccountName: wap-admin
+      containers:
       - name: admin
         image: cloudowski/whackapod-admin
         ports:
