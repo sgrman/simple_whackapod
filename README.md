@@ -18,7 +18,9 @@ With the help of @nvpnathan, this repo provides a deployment methodology based o
 
 On your environment, download or clone the files the .yaml files to a directory of your choice
 
-<NEED LINK>
+```
+git clone https://github.com/sgrman/simple_whackapod.git
+```
 
 ### Step 1.1: Delpoy Namespaces
 Two namespaces are deployed for this application.  The first is wap-admin and the second is wap-game.  The wap-admin namespace is where the containers supporting the admin, api and game deployment will reside.  The wap-game namespace is used by the game for the deployment of simulated kubernetes pods that you will attempt to "whack" or "kill".  
@@ -64,7 +66,7 @@ This yaml will deploy and ingress for the application.  You may need to change t
 kubectl apply -f wap-ingress.yaml
 ```
 
-That's it!  You should be able to use your ingree IP or hostname value (provided you have the appropriate DNS config) to log into the application. 
+That's it!  You should be able to use your use your ingress IP or hostname value (provided you have the appropriate DNS config) to log into the application. 
 
 This is my first repo, so special thanks to @nvpnathan for his help and again to Terrance Ryan for the original application repo.
 
