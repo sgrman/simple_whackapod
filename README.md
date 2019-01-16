@@ -22,7 +22,7 @@ On your environment, download or clone the files the .yaml files to a directory 
 git clone https://github.com/sgrman/simple_whackapod.git
 ```
 
-### Step 1.1: Delpoy Namespaces
+### Step 1.1: Deploy Namespaces
 Two namespaces are deployed for this application.  The first is wap-admin and the second is wap-game.  The wap-admin namespace is where the containers supporting the admin, api and game deployment will reside.  The wap-game namespace is used by the game for the deployment of simulated kubernetes pods that you will attempt to "whack" or "kill".  
 
 Once authenticated to your environment delpoy the namespaces:
