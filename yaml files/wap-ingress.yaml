@@ -20,4 +20,4 @@ spec:
         backend:
           serviceName: game-deployment
           servicePort: 8080
-    host: whackapod.ing.vpod01.local
+    host: whackapod.ing.flhrnet.local
